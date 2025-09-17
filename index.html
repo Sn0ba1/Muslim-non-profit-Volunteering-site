@@ -3,105 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> – A Student led non-profit dedicated to serving the muslim community </title>
+  <title>IMPACT Youth – A Student led non-profit dedicated to serving the muslim community</title>
   <meta name="description" content="A Student led non-profit dedicated to serving the muslim community" />
   <style>
     :root {
-      --bg: #0f172a;          /* slate-900 */
-      --panel: #0b1229;       /* deep navy */
-      --muted: #111c3a;       /* slightly lighter */
-      --text: #e5e7eb;        /* gray-200 */
-      --subtext: #cbd5e1;     /* slate-300 */
-      --primary: #22c55e;     /* green-500 */
-      --primary-600: #16a34a; /* green-600 */
-      --accent: #60a5fa;      /* blue-400 */
-      --ring: rgba(34,197,94,.5);
-      --shadow: 0 10px 25px rgba(0,0,0,.25);
-      --radius: 16px;
-      --radius-sm: 12px;
-      --maxw: 1100px;
+      --bg:#0f172a; --panel:#0b1229; --muted:#111c3a; --text:#e5e7eb; --subtext:#cbd5e1;
+      --primary:#22c55e; --primary-600:#16a34a; --accent:#60a5fa; --ring:rgba(34,197,94,.5);
+      --shadow:0 10px 25px rgba(0,0,0,.25); --radius:16px; --maxw:1100px;
     }
-    html { scroll-behavior: smooth; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--text); background: radial-gradient(1200px 600px at 80% -10%, rgba(96,165,250,.15), transparent 60%), radial-gradient(1000px 500px at 10% 20%, rgba(34,197,94,.08), transparent 60%), var(--bg);
-      line-height: 1.6;
+    html{scroll-behavior:smooth} *{box-sizing:border-box}
+    body{
+      margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(96,165,250,.15), transparent 60%),
+        radial-gradient(1000px 500px at 10% 20%, rgba(34,197,94,.08), transparent 60%),
+        var(--bg);
+      line-height:1.6;
     }
-    a { color: inherit; text-decoration: none; }
-    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+    a{text-decoration:none;color:inherit}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
-    /* Header / Nav */
-    header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: saturate(140%) blur(10px);
-      background: rgba(8, 13, 30, .7);
-      border-bottom: 1px solid rgba(99,102,241,.15);
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .3px; }
-    .brand .logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, var(--primary), #34d399); color: #052e16; font-weight: 900; box-shadow: var(--shadow); }
-    .links { display: flex; gap: 8px; align-items: center; }
-    .nav a.btn { padding: 10px 14px; border-radius: 999px; font-weight: 600; color: var(--subtext); border: 1px solid transparent; }
-    .nav a.btn:hover { color: var(--text); background: rgba(148,163,184,.12); border-color: rgba(148,163,184,.2); }
-    .nav a.btn.active { color: #04130a; background: var(--primary); border-color: transparent; }
-
-    /* Mobile */
-    .hamburger { display: none; background: transparent; border: 0; color: var(--text); font-size: 20px; padding: 8px; border-radius: 10px; }
-    .hamburger:focus { outline: 2px solid var(--ring); outline-offset: 3px; }
-    .mobile { display: none; }
-    @media (max-width: 860px) {
-      .links { display: none; }
-      .hamburger { display: inline-grid; place-items: center; }
-      .mobile { display: block; border-top: 1px solid rgba(148,163,184,.15); }
-      .mobile .linkgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px 16px 16px; }
-      .mobile a { display: block; text-align: center; padding: 12px; border-radius: 10px; background: rgba(148,163,184,.08); color: var(--subtext); }
-      .mobile a:active { background: rgba(148,163,184,.18); color: var(--text); }
-      .mobile.closed { display: none; }
+    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(10px);
+      background:rgba(8,13,30,.7);border-bottom:1px solid rgba(99,102,241,.15)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--primary),#34d399);color:#052e16;font-weight:900;box-shadow:var(--shadow)}
+    .links{display:flex;gap:8px;align-items:center}
+    .nav a.btn{padding:10px 14px;border-radius:999px;font-weight:600;color:var(--subtext);border:1px solid transparent}
+    .nav a.btn:hover{color:var(--text);background:rgba(148,163,184,.12);border-color:rgba(148,163,184,.2)}
+    .nav a.btn.active{color:#04130a;background:var(--primary)}
+    .hamburger{display:none;background:transparent;border:0;color:var(--text);font-size:20px;padding:8px;border-radius:10px}
+    .hamburger:focus{outline:2px solid var(--ring);outline-offset:3px}
+    .mobile{display:none}
+    @media (max-width:860px){
+      .links{display:none}.hamburger{display:inline-grid;place-items:center}
+      .mobile{display:block;border-top:1px solid rgba(148,163,184,.15)}
+      .mobile .linkgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px 16px 16px}
+      .mobile a{display:block;text-align:center;padding:12px;border-radius:10px;background:rgba(148,163,184,.08);color:var(--subtext)}
+      .mobile a:active{background:rgba(148,163,184,.18);color:var(--text)} .mobile.closed{display:none}
     }
 
-    /* Hero */
-    .hero { padding: 72px 0 36px; }
-    .hero .wrap { display: grid; gap: 28px; align-items: center; grid-template-columns: 1.2fr .8fr; }
-    .badge { display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(148,163,184,.25); background: rgba(148,163,184,.06); color: var(--subtext); font-weight: 600; }
-    h1 { font-size: clamp(28px, 5vw, 48px); margin: 10px 0; line-height: 1.15; }
-    .lead { color: var(--subtext); font-size: clamp(16px, 2.3vw, 18px); max-width: 60ch; }
-    .cta { display: flex; gap: 12px; margin-top: 18px; }
-    .btn-primary { background: var(--primary); color: #04130a; padding: 12px 16px; border-radius: 12px; font-weight: 700; border: 0; box-shadow: 0 6px 18px rgba(34,197,94,.35); }
-    .btn-primary:hover { background: var(--primary-600); }
-    .btn-ghost { background: transparent; color: var(--text); border: 1px solid rgba(148,163,184,.3); padding: 12px 16px; border-radius: 12px; font-weight: 700; }
+    .hero{padding:72px 0 36px}
+    .wrap{display:grid;gap:28px;align-items:center;grid-template-columns:1.2fr .8fr}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;border:1px solid rgba(148,163,184,.25);
+      background:rgba(148,163,184,.06);color:var(--subtext);font-weight:600}
+    h1{font-size:clamp(28px,5vw,48px);margin:10px 0;line-height:1.15}
+    .lead{color:var(--subtext);font-size:clamp(16px,2.3vw,18px);max-width:60ch}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn-primary{background:var(--primary);color:#04130a;padding:12px 16px;border-radius:12px;font-weight:700;border:0;box-shadow:0 6px 18px rgba(34,197,94,.35)}
+    .btn-primary:hover{background:var(--primary-600)} .btn-ghost{background:transparent;color:var(--text);border:1px solid rgba(148,163,184,.3);padding:12px 16px;border-radius:12px;font-weight:700}
+    .card{background:linear-gradient(180deg, rgba(3,7,18,.35), rgba(2,6,23,.6));border:1px solid rgba(148,163,184,.18);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+    section{scroll-margin-top:90px;padding:60px 0} section h2{font-size:clamp(24px,4vw,36px);margin:0 0 10px}
+    .sub{color:var(--subtext);margin-bottom:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    @media (max-width:860px){.wrap{grid-template-columns:1fr}.grid-3,.grid-2{grid-template-columns:1fr}}
 
-    .card { background: linear-gradient(180deg, rgba(3,7,18,.35), rgba(2,6,23,.6)); border: 1px solid rgba(148,163,184,.18); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+    ul.clean{list-style:none;margin:0;padding:0} ul.clean li{padding:12px 0;border-bottom:1px dashed rgba(148,163,184,.2)}
+    footer{padding:40px 0;color:var(--subtext);border-top:1px solid rgba(148,163,184,.15);background:rgba(2,6,23,.4)}
+    .footergrid{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px}
+    @media (max-width:700px){.footergrid{grid-template-columns:1fr;text-align:center}}
 
-    section { scroll-margin-top: 90px; padding: 60px 0; }
-    section h2 { font-size: clamp(24px, 4vw, 36px); margin: 0 0 10px; }
-    .sub { color: var(--subtext); margin-bottom: 22px; }
-
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-    @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .grid-3, .grid-2 { grid-template-columns: 1fr; } }
-
-    .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(96,165,250,.15); color: #dbeafe; font-weight: 600; font-size: 13px; }
-    ul.clean { list-style: none; margin: 0; padding: 0; }
-    ul.clean li { padding: 12px 0; border-bottom: 1px dashed rgba(148,163,184,.2); }
-
-    /* Footer */
-    footer { padding: 40px 0; color: var(--subtext); border-top: 1px solid rgba(148,163,184,.15); background: rgba(2,6,23,.4); }
-    .footergrid { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 16px; }
-    @media (max-width: 700px) { .footergrid { grid-template-columns: 1fr; text-align: center; } }
-
-    /* Forms */
-    .form { display: grid; gap: 12px; }
-    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    @media (max-width: 700px) { .row { grid-template-columns: 1fr; } }
-    .input, textarea, select { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(148,163,184,.25); background: rgba(15,23,42,.6); color: var(--text); }
-    .input:focus, textarea:focus, select:focus { outline: 2px solid var(--ring); border-color: transparent; }
-    textarea { min-height: 120px; resize: vertical; }
-    .note { color: var(--subtext); font-size: 14px; }
-
-    /* Accessibility helpers */
-    .skip { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-    .skip:focus { position: fixed; left: 16px; top: 16px; width: auto; height: auto; padding: 10px 14px; border-radius: 10px; background: #111827; outline: 2px solid var(--ring); }
+    .form{display:grid;gap:12px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){.row{grid-template-columns:1fr}}
+    .input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:rgba(15,23,42,.6);color:var(--text)}
+    .input:focus,textarea:focus,select:focus{outline:2px solid var(--ring);border-color:transparent}
+    textarea{min-height:120px;resize:vertical}
   </style>
 </head>
 <body>
@@ -124,12 +94,8 @@
     </div>
     <div id="mobileMenu" class="mobile closed" aria-label="Mobile menu">
       <div class="linkgrid container">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#impact">Our Impact</a>
-        <a href="#events">Events</a>
-        <a href="#join">Join Us</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">Home</a><a href="#about">About Us</a><a href="#impact">Our Impact</a>
+        <a href="#events">Events</a><a href="#join">Join Us</a><a href="#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -137,9 +103,9 @@
   <main id="home" class="hero">
     <div class="container wrap">
       <div>
-        <span class="badge" aria-label="Mission tag">A Student led non-profit dedicated to enriching the muslim community.</span>
+        <span class="badge">A Student led non-profit dedicated to enriching the muslim community.</span>
         <h1>Giving back to our community</h1>
-        <p class="lead">The Impact innitiative is a student led non-profit. Our mission is to serve the Muslim Ummah and empower students to give back to their communities.</p>
+        <p class="lead">The Impact initiative is a student led non-profit. Our mission is to serve the Muslim Ummah and empower students to give back to their communities.</p>
         <div class="cta">
           <a href="#join" class="btn-primary">Join the Movement</a>
           <a href="#events" class="btn-ghost">See Upcoming Events</a>
@@ -151,15 +117,15 @@
   <section id="about">
     <div class="container">
       <h2>About Us</h2>
-      <p class="sub">At IMPACT Youth, we empower Muslim students to give back to their communities. We started from a small, student-led volunteering club. Partnered with our school and local masjid, we facilitated several fundraisers and dontation events, and provided our services to community events. Today we have grown to a registered non-profit and have expanded our services to other communities as well. We may be student led, but our results speak for themselves.</p>
+      <p class="sub">At IMPACT Youth, we empower Muslim students to give back to their communities. We started as a student-led club, partnered with our school and local masjid, and grew into a registered non-profit.</p>
       <div class="grid-2">
         <div class="card">
           <h3 style="margin-top:0">Team</h3>
           <ul class="clean">
-            <li><strong>Taha Rastegar, Founder,</strong>   :  Taha is interested in business and serving his community. He's the one who started it all</li>
-            <li><strong>Mohammad Kiaei, Lead Software Coordinator</strong>    :  Mohammad is interested in coding and mathematics. He believes in using his skills to enrich his community.</li>
-            <li><strong>John Zaidi, Lead UI designer</strong>    :  John is a talented programmer interested in biotechnology. </li>
-            <li><strong>Mohammad Amin Shahrabi, Social Media Manager</strong>    :  Mohammad Amin Shahrabi is a skilled soccer player and is devoted to serving his community.</li>
+            <li><strong>Taha Rastegar, Founder</strong> — Started it all.</li>
+            <li><strong>Mohammad Kiaei, Lead Software Coordinator</strong> — Uses coding and math to serve the community.</li>
+            <li><strong>John Zaidi, Lead UI Designer</strong> — Programmer interested in biotechnology.</li>
+            <li><strong>Mohammad Amin Shahrabi, Social Media Manager</strong> — Devoted to community service.</li>
           </ul>
         </div>
       </div>
@@ -169,20 +135,11 @@
   <section id="impact">
     <div class="container">
       <h2>Our Impact</h2>
-      <p class="sub">IMPACT Youth has Spearheaded numerous fundraisers and donation events: We led a canned food drive, a clothes drive, created care packages, held a stand at the SABA eid festival, and helped serve the community by washing cars free of charge.</p>
+      <p class="sub">We’ve led food and clothes drives, built care packages, hosted at the SABA Eid festival, and offered free car washes.</p>
       <div class="grid-3">
-        <div class="card"><h3 style="margin-top:0">Food drive</h3>
-          <p><strong>→ Number</strong> food cans donated.</p>
-          <p class="note">→ Description heree.</p>
-        </div>
-        <div class="card"><h3 style="margin-top:0">Care Packages</h3>
-          <p><strong>→ Number</strong> care packages created.</p>
-          <p class="note">description here.</p>
-        </div>
-        <div class="card"><h3 style="margin-top:0">Clothes drive</h3>
-          <p><strong>→ Number</strong> articles of clothes donated.</p>
-          <p class="note">Description.</p>
-        </div>
+        <div class="card"><h3 style="margin-top:0">Food Drive</h3><p><strong>→ Number</strong> cans donated.</p></div>
+        <div class="card"><h3 style="margin-top:0">Care Packages</h3><p><strong>→ Number</strong> packages created.</p></div>
+        <div class="card"><h3 style="margin-top:0">Clothes Drive</h3><p><strong>→ Number</strong> articles donated.</p></div>
       </div>
     </div>
   </section>
@@ -197,9 +154,9 @@
           <ul class="clean">
             <li><strong>Date:</strong> → e.g., Saturday, Oct 12, 2025</li>
             <li><strong>Time:</strong> → e.g., 3:00–6:00 PM</li>
-            <li><strong>Venue:</strong> → e.g., Community Center / Masjid</li>
-            <li><strong>Summary:</strong> → Short description of the event and target audience.</li>
-            <li><strong>Register:</strong> → Link or instructions here</li>
+            <li><strong>Venue:</strong> → Community Center / Masjid</li>
+            <li><strong>Summary:</strong> → Short description.</li>
+            <li><strong>Register:</strong> → Link or instructions</li>
           </ul>
         </div>
         <div class="card">
@@ -219,36 +176,39 @@
   <section id="join">
     <div class="container">
       <h2>Join Us</h2>
-      <p class="sub">→ Explain membership, volunteering, and leadership pathways. Include eligibility and approximate time commitments.</p>
+      <p class="sub">→ Explain membership, volunteering, and leadership pathways.</p>
       <div class="grid-2">
         <div class="card">
           <h3 style="margin-top:0">Volunteer / Member Interest</h3>
-          <form class="form" onsubmit="event.preventDefault(); alert('Thank you! This is a placeholder form.');">
+          <form id="joinForm" class="form" novalidate>
+            <!-- Honeypot -->
+            <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;padding:0;border:0">
             <div class="row">
-              <input class="input" type="text" placeholder="→ Full Name" required>
-              <input class="input" type="email" placeholder="→ Email" required>
+              <input class="input" type="text"  name="name"     placeholder="→ Full Name" required>
+              <input class="input" type="email" name="email"    placeholder="→ Email" required>
             </div>
             <div class="row">
-              <input class="input" type="tel" placeholder="→ Phone (optional)">
-              <select class="input" aria-label="Area of Interest">
-                <option>→ Area of Interest</option>
-                <option>Website/Social media development</option>
-                <option>Fundraising/donations</option>
-                <option>Hands on volunteering service</option>
+              <input class="input" type="tel"   name="phone"    placeholder="→ Phone (optional)">
+              <select class="input" name="interest" aria-label="Area of Interest" required>
+                <option value="" disabled selected>→ Area of Interest</option>
+                <option>Web and Media Development</option>
+                <option>Event Planning</option>
+                <option>Fundraising and Donations</option>
+                <option>Hands on service</option>
               </select>
             </div>
-            <textarea placeholder="→ Tell us briefly why you want to join"></textarea>
+            <textarea name="message" placeholder="→ Tell us briefly why you want to join"></textarea>
             <button class="btn-primary" type="submit">Express Interest</button>
-            <p class="note">By submitting, you agree to be contacted about volunteer opportunities. Replace this with your privacy note.</p>
+            <p class="note">By submitting, you agree to be contacted about volunteer opportunities.</p>
           </form>
         </div>
         <div class="card">
           <h3 style="margin-top:0">Why Join?</h3>
           <ul class="clean">
-            <li>→ Benefit 1 (e.g., Leadership development & mentorship)</li>
-            <li>→ Benefit 2 (e.g., Service opportunities with impact)</li>
-            <li>→ Benefit 3 (e.g., College/career prep resources)</li>
-            <li>→ Benefit 4 (e.g., Faith‑centered community & support)</li>
+            <li>→ Leadership development & mentorship</li>
+            <li>→ Service opportunities with impact</li>
+            <li>→ College/career prep resources</li>
+            <li>→ Faith-centered community & support</li>
           </ul>
         </div>
       </div>
@@ -258,25 +218,26 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p class="sub">→ Provide your official contact details and response time.</p>
       <div class="grid-2">
         <div class="card">
           <h3 style="margin-top:0">Get in Touch</h3>
           <ul class="clean">
-            <li><strong>Email:</strong> → tahaexample@gmail.com</li>
-            <li><strong>Phone:</strong> → (___) ___‑____</li>
+            <li><strong>Email:</strong> → hello@yourorg.org</li>
+            <li><strong>Phone:</strong> → (___) ___-____</li>
             <li><strong>Address:</strong> → Street, City, State</li>
-            <li><strong>Social:</strong> → Links to Instagram, X, TikTok, YouTube</li>
+            <li><strong>Social:</strong> → Instagram, X, TikTok, YouTube</li>
           </ul>
         </div>
         <div class="card">
           <h3 style="margin-top:0">Message Us</h3>
-          <form class="form" onsubmit="event.preventDefault(); alert('Thanks! This is a placeholder.');">
-            <input class="input" type="text" placeholder="→ Your Name" required>
-            <input class="input" type="email" placeholder="→ Your Email" required>
-            <textarea placeholder="→ Your Message" required></textarea>
+          <form id="contactForm" class="form" novalidate>
+            <!-- Honeypot -->
+            <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;padding:0;border:0">
+            <input class="input" type="text"  name="name"  placeholder="→ Your Name" required>
+            <input class="input" type="email" name="email" placeholder="→ Your Email" required>
+            <textarea class="input" name="message" placeholder="→ Your Message" required></textarea>
             <button class="btn-primary" type="submit">Send Message</button>
-            <p class="note">→ Add your GDPR/Privacy note here.</p>
+            <p class="note">→ Add your privacy note here.</p>
           </form>
         </div>
       </div>
@@ -291,6 +252,10 @@
   </footer>
 
   <script>
+    // ===== CONFIGURE THIS =====
+    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwa9YAD4AztzcTCwbA3g_C5n8wpeC3vnmeWBS37h7FtTXSWPxzceHS7fEQY8NrivT3uwg/exec";
+    // ==========================
+
     // Mobile menu toggle
     const hamburger = document.getElementById('hamburger');
     const mobile = document.getElementById('mobileMenu');
@@ -298,14 +263,13 @@
       const isOpen = mobile.classList.toggle('closed');
       hamburger.setAttribute('aria-expanded', String(!isOpen));
     });
-    // Close mobile menu on link click
     mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.add('closed')));
 
-    // Active link highlight on scroll (simple scrollspy)
+    // Scrollspy
     const links = Array.from(document.querySelectorAll('header nav a.btn'));
     const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
     const setActive = () => {
-      const y = window.scrollY + 110; // header offset
+      const y = window.scrollY + 110;
       let current = sections[0];
       for (const sec of sections) { if (sec.offsetTop <= y) current = sec; }
       links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current.id));
@@ -313,8 +277,46 @@
     window.addEventListener('scroll', setActive, { passive: true });
     window.addEventListener('load', setActive);
 
-    // Year in footer
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---- Helpers ----
+    async function submitToGAS(payload) {
+      const body = new URLSearchParams(payload);
+      await fetch(WEBAPP_URL, {
+        method: 'POST',
+        mode: 'no-cors', // avoids CORS preflight; response is opaque
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body
+      });
+    }
+    function serialize(form, extra) {
+      const fd = new FormData(form);
+      const obj = Object.fromEntries(fd.entries());
+      return Object.assign(obj, extra || {});
+    }
+    function attachHandler(formId, formName, successMsg) {
+      const form = document.getElementById(formId);
+      if (!form) return;
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        // Honeypot trip: silently succeed
+        if ((form.querySelector('[name="company"]').value || '').trim() !== '') return;
+        try {
+          const payload = serialize(form, { form: formName });
+          await submitToGAS(payload);
+          alert(successMsg);
+          form.reset();
+        } catch (err) {
+          console.error(err);
+          alert('Sorry—there was an error sending your submission.');
+        }
+      });
+    }
+
+    // Attach handlers
+    attachHandler('joinForm', 'Join', 'Thank you! Your interest was sent.');
+    attachHandler('contactForm', 'Contact', 'Thanks! Your message was sent.');
   </script>
 </body>
 </html>
